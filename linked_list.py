@@ -126,5 +126,3 @@ LL1.delete_end()
 LL1.delete_by_value(950)
 LL1.print_LL()
 
-
-   
