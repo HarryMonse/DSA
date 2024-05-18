@@ -22,3 +22,34 @@
 # LL1 = LinkedList()
 # LL1.print_LL()
 
+
+# class recursion:                                            # Recursion
+#     def factorial(self, n):
+#         if n <= 1:
+#             return 1
+#         else:
+#             return n * self.factorial(n-1)
+        
+# ans = recursion()
+# print(ans.factorial(5))
+    
+
+
+# def reverse(n):                                             # Reversing string using Recursion
+#     if len(n) <= 1:
+#         return n
+#     else:
+#         return n[-1] + reverse(n[:-1])
+    
+# print(reverse("apple"))
+
+
+# def reverse(s):                                             # Reversing string using Recursion
+#     if len(s) <= 1:
+#         return s
+#     else:
+#         return reverse(s[1:]) + s[0]
+    
+# print(reverse("apple"))
+
+
