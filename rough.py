@@ -122,3 +122,16 @@
     
 
 
+
+# def recursive_sum(arr):                                         # Sum of array using Recursion
+#     if len(arr) == 0:
+#         return 0
+#     else:
+#         return arr[0] + recursive_sum(arr[1:])
+
+# arr = [5,25,10,15,20,25]
+# print(recursive_sum(arr))
+
+
+
+
