@@ -52,3 +52,47 @@
     
 # print(reverse("apple"))
 
+
+
+
+# def linear_search(arr, target):                               # Linear Search
+#     for i, num in enumerate(arr):
+#         if num == target:
+#             return i 
+#     return -1
+        
+# arr = [3,6,2,8,5,7]
+# target = 8
+
+# print(linear_search(arr, target))
+
+
+
+# arr = [5,2,6,7,3,4]                                           # Linear Search
+# target = 7
+
+# flag = 0
+
+# for i in range(len(arr)):
+#     if arr[i] == target:
+#         print("Found at position", i)
+#         flag = 1    
+
+# if flag == 0:
+#     print("Not found")
+
+
+
+# def linear_search(arr, target):                               # Linear Search
+#     for i in range(len(arr)):
+#         if arr[i] == target:
+#             return i
+#     return -1
+
+# arr = [5,2,6,7,3,4]
+# target = 7
+
+# ans = linear_search(arr, target)
+# print(ans)
+
+
