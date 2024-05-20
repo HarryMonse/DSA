@@ -123,15 +123,32 @@
 
 
 
-# def recursive_sum(arr):                                         # Sum of array using Recursion
-#     if len(arr) == 0:
-#         return 0
-#     else:
-#         return arr[0] + recursive_sum(arr[1:])
+def recursive_sum(arr):                                         # Sum of array using Recursion
+    if len(arr) == 0:
+        return 0
+    else:
+        return arr[0] + recursive_sum(arr[1:])
 
-# arr = [5,25,10,15,20,25]
-# print(recursive_sum(arr))
-
-
+arr = [5,25,10,15,20,25]
+print(recursive_sum(arr))
 
 
+
+
+def recursive_binary_search(arr, target, low, high):                # Binary Search using Recursion
+    if low > high:
+        return -1
+    else:
+        mid = (low + high) // 2
+
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            return recursive_binary_search(arr, target, mid + 1, high)
+        else:
+            return recursive_binary_search(arr, target, low, mid - 1)
+
+arr = [2,4,5,8,25,36,57]
+target = 25
+
+print(recursive_binary_search(arr, target, 0, len(arr)-1))
