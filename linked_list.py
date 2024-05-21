@@ -69,7 +69,7 @@ class LinkedList:                                           # Creating Linked Li
             new_node.ref = n.ref
             n.ref = new_node
 
-    def insert_empty(self, data):
+    def insert_empty(self, data):                           # Adding Node when Linked List is empty
         if self.head is None:
             new_node = Node(data)
             self.head = new_node
