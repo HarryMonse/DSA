@@ -152,3 +152,19 @@
 # target = 25
 
 # print(recursive_binary_search(arr, target, 0, len(arr)-1))
+
+
+
+
+
+# arr = [12,14,67,34,3,6,7]                                             # Array Reversing
+# print(arr[::-1])
+
+
+
+
+
+# LEARN
+
+# REVERSING A LINKED LIST 
+# SINGLY TO DOUBLY LINKED LIST CONVERSION
