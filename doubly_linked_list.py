@@ -31,4 +31,5 @@ class doublyLL:                                             # Creating Linked Li
 
 dl1 = doublyLL()
 dl1.print_LL()
+dl1.print_LL_reverse()
 
