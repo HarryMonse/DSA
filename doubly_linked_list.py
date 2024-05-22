@@ -96,20 +96,72 @@ class doublyLL:                                             # Creating Linked Li
                 n.pref = new_node
 
 
-    
-                
-            
+    def delete_begin(self):                                 # Deleting Node at the beginning
+        if self.head is None:
+            print("DLL is empty, can't delete !")
+            return 
+        if self.head.nref is None:
+            self.head = None
+            print("DLL is empty after deleting the node!")
+        else:
+            self.head = self.head.nref
+            self.head.pref = None
 
+    def delete_end(self):                                   # Deleting Node at the end
+        if self.head is None:
+            print("DLL is empty, can't delete !")
+            return 
+        if self.head.nref is None:
+            self.head = None
+            print("DLL is empty after deleting the node!")
+        else:
+            n = self.head
+            while n.nref is not None:
+                n = n.nref
+            n.pref.nref = None
+
+    def delete_by_value(self, x):                           # Deleting Node by value
+        if self.head is None:                                   # (5 cases)
+            print("DLL is empty, can't delete !")               # (if LL is empty)
+            return 
+        if self.head.nref is None:                              # (if only one node is present)
+            if x == self.head.data:
+                self.head = None
+            else:
+                print("x is not present in DLL")
+            return
+        if self.head.data == x:                                 # (if it is first node)
+            self.head = self.head.nref
+            self.head.pref = None
+            return
+        n = self.head                                           # (if we want to delete middle nodes)
+        while n.nref is not None:
+            if x == n.data:
+                break
+            n = n.nref
+        if n.nref is not None:
+            n.nref.pref = n.pref
+            n.pref.nref = n.nref
+        else:
+            if n.data == x:                                     # (if it is last node)              
+                n.pref.nref = None
+            else:
+                print("x is not present in DLL!")
+
+                
 
 
 dl1 = doublyLL()
 # dl1.insert_empty(10)
 # dl1.add_begin(20)
 # dl1.add_end(100)
-# dl1.add_begin(4)
+dl1.add_begin(4)
 # dl1.add_after(10,4)
 # dl1.add_begin(4)
 dl1.add_before(10,4)
+# dl1.delete_begin()
+# dl1.delete_end()
+dl1.delete_by_value(40)
 
 
 dl1.print_LL()
