@@ -445,3 +445,147 @@
 # doubly_linked_list.print_LL()
 
 
+
+
+# ------------------------------------------------------------------------------------------------------------------------ 
+
+# Practice
+
+
+# def linear_search(arr, target):
+#     for i in range(len(arr)):
+#         if arr[i] == target:
+#             return i 
+#     return -1
+
+# arr = [6,4,2,7,8,4,2,1]
+# target = 7
+
+# print(linear_search(arr, target))
+
+
+# def binary_search(arr, target):
+#     low = 0 
+#     high = len(arr) -1
+
+#     while low <= high:
+#         mid = (low + high) // 2
+
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             low = mid + 1
+#         else:
+#             high = mid - 1
+    
+#     return -1
+
+# arr = [2,4,6,7,9,24,56,89]
+# target = 56
+
+# ans = binary_search(arr, target)
+# print(ans)
+
+
+# def reverse(s):
+#     if len(s) <= 1:
+#         return s
+#     else:
+#         return s[-1] + reverse(s[:-1])
+    
+# s = "harry"
+# print(reverse(s))
+
+
+# def reverse(s):
+#     if len(s) <= 1:
+#         return s
+#     else:
+#         return reverse(s[1:]) + s[0]
+    
+# s = "harry"
+# print(reverse(s))
+        
+
+# def recursive_sum(arr):
+#     if len(arr) == 0:
+#         return 0 
+#     else:
+#         return arr[0] + recursive_sum(arr[1:])
+    
+# arr = [2,5,6]
+# print(recursive_sum(arr))
+
+
+# def recursive_binary_search(arr, target, low, high):
+#     if low > high:
+#         return -1
+#     else:
+#         mid = (low + high) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             return recursive_binary_search(arr, target, mid+1, high)
+#         else:
+#             return recursive_binary_search(arr, target, low, mid-1)
+        
+# arr = [2,4,6,7,9,24,56,89]
+# target = 7
+
+# print(recursive_binary_search(arr, target, 0, len(arr)-1))
+
+
+# def factorial(n):
+#     if n <= 1:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+
+# n = 5
+# print(factorial(n))
+
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.ref = None
+
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
+
+#     def print_LL(self):
+#         if self.head is None:
+#             print("LL is empty")
+#         else:
+#             n = self.head
+#             while n is not None:
+#                 print(n.data, "-->", end = " ")
+#                 n = n.ref
+
+#     def add_begin(self, data):
+#         new_node = Node(data)
+#         new_node.ref = self.head
+#         self.head = new_node
+
+#     def reverse_LL(self):
+#         prev = None
+#         current = self.head
+#         while current:
+#             next_node = current.ref
+#             current.ref = prev
+#             prev = current
+#             current = next_node
+#         self.head = prev
+
+# LL1 = LinkedList()
+# LL1.add_begin(3)
+# LL1.add_begin(2)
+# LL1.add_begin(1)
+
+# LL1.print_LL()
+# print()
+# LL1.reverse_LL()
+# LL1.print_LL()
+
+
