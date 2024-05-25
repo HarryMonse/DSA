@@ -75,5 +75,3 @@
     
 # print(reverse("apple"))
 
-
-
