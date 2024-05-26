@@ -17,7 +17,6 @@ print(ans)
 
 
 
-
 #             res += int(j)
 #             if len(res) != 1:
 #                 i = res
