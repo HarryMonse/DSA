@@ -2,25 +2,15 @@
 
 ans = []
 res = 0
-for i in range(5000,9999):
+result = 0
+for i in range(6200,8600):
     for j in str(i):
-        while len(str(i)) != 0:
-            res += int(str(i))[1]
-            i = str(i)[1:]
-
-        while len(str(res)) != 1:
-            res += int(str(res))[1]
-            res = str(res)[1:]
-
-        ans.append(int(i))
+        res += int(j)
+    for k in str(res):
+        result += int(k) 
+    if result == 1: #or result == 3:  
+        ans.append(i)
+    res =0
+    result = 0
 print(ans)
-
-
-
-#             res += int(j)
-#             if len(res) != 1:
-#                 i = res
-#         ans.append(int(i))
-# print(ans)
-
 
