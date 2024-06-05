@@ -53,3 +53,44 @@
 #     else:
 #         print("Enter the correct operation!")
 
+
+
+
+# import collections                                  # Implementing stack using modules
+# stack = collections.deque()                         # Using 'deque' class from 'collections' module
+# print(stack)                     
+
+# stack.append(10)
+# stack.append(20)
+# stack.append(30)
+# print(stack)
+
+# print(stack.pop())
+# print(stack.pop())
+# print(stack.pop())
+
+
+# print(len(stack) == 0)                              # isEmpty 
+# print(not stack)
+
+# stack.append(10)                                    # Peek or Top element
+# stack.append(20)
+# stack.append(30)
+# print(stack[-1]) 
+
+
+# import queue                                        # Using 'LifoQueue' class from 'queue' module
+# stack = queue.LifoQueue(3)
+
+# stack.put(10)                                             # We use put & get instead of append & pop
+# stack.put(20)
+# stack.put(30)
+# # stack.put(40, timeout=1)
+
+
+# print(stack.get())
+# print(stack.get())
+# print(stack.get())
+# # print(stack.get(timeout=1))
+
+
