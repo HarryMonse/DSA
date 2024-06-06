@@ -117,3 +117,41 @@
 
 
 
+# q = []                                              # Priority Queue
+# q.append(10)                                            # Taking Lowest Value as Highest Priority
+# q.append(40)
+# q.append(20)
+# q.sort()
+# print(q)
+
+# print(q.pop(0))
+# print(q.pop(0))
+# print(q.pop(0))
+
+
+# import queue                                            # Using priority queue class
+# q = queue.PriorityQueue()                                  # (Automatically takes the lowest value as the highest priority)
+# q.put(10)                                                   # We use put & get
+# q.put(60)
+# q.put(20)
+# q.put(40)
+# q.put(40)
+
+# print(q.get())
+# print(q.get())
+# print(q.get())
+# print(q.get())
+# print(q.get())
+
+
+# q = []                                                  # Giving priority manually using tuple
+# q.append((1, "alexa"))
+# q.append((4, "alex"))
+# q.append((2, "al"))
+# q.sort(reverse=True)                                        # Taking Highest Value as Highest Priority
+# print(q)
+
+# print(q.pop(0))
+# print(q.pop(0))
+# print(q.pop(0))
+
