@@ -66,3 +66,54 @@
 
 
 
+
+# import collections                                              # Implementing queue using classes
+# q = collections.deque()                                         # Using 'deque' class from 'collections' module
+# print(q)
+
+# q.appendleft(10)                                                    # Using append left and pop methods
+# q.appendleft(20)
+# q.appendleft(30)
+# print(q)
+
+# print(q.pop())
+# print(q.pop())
+# print(q.pop())
+
+
+# q.append(10)                                                        # Using append and pop left methods
+# q.append(20)
+# q.append(30)
+# print(q)
+
+# print(q.popleft())
+# print(q.popleft())
+# print(q.popleft())
+
+
+# print(not q)                                                    # isEmpty
+
+
+# q.append(20)                                                    # to find values
+# q.append(10)
+# q.append(5)
+# print(q)
+
+# print(q[-1])
+# print(q[0])
+
+
+
+# import queue                                        # Using 'Queue' class from 'queue' module
+# q = queue.Queue()
+
+# q.put(10)                                             # We use put & get instead of append & pop
+# q.put(50)
+# q.put(30)
+
+# print(q.get())
+# print(q.get())
+# print(q.get())
+
+
+
