@@ -1,4 +1,4 @@
-# stack = []
+# stack = []                                                                    # Practical Question 1
 
 # def push():
 #     if len(stack) == n:
@@ -31,7 +31,7 @@
 
 
 
-# def InsertionSort(my_list):
+# def InsertionSort(my_list):                                                   # Practical Question 2
 #     for index in range(1, len(my_list)):
 #         current_element = my_list[index]
 #         pos = index
